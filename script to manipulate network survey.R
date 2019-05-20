@@ -704,6 +704,60 @@ for (s in 1:length(subjids)) {
         print(relationships[i, 3])
       }
     }
+    ################################### SIBLING 1
+    if (relationships$Nodes[i] == "Sibling 1") {
+      # get the index of the coloumn for gender
+      index <- grep("Sibling.1", colnames(snq_gender))
+      print("Sibling 1")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
+      print("gender characterstrng")
+      print(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
+    ################################### SIBLING 2
+    if (relationships$Nodes[i] == "Sibling 2") {
+      # get the index of the coloumn for gender
+      index <- grep("Sibling.2", colnames(snq_gender))
+      print("Sibling 2")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
+      print("gender characterstrng")
+      print(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
   }
 }
 
