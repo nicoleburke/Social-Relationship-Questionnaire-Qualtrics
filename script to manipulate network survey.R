@@ -8,6 +8,9 @@ library(tidyverse)
 ################# import data ##############
 snq <- read.csv("sample data.csv", fileEncoding = "latin1")
 str(snq)
+# get rid of "" for subjectIDs
+snq <- subset(snq, Participant....for.the.researcher. == "test 2"|
+                Participant....for.the.researcher. == "test 3"|Participant....for.the.researcher. == "testing")
 
 ## Summarize and get a table with just the nodes 
 nodes_persubj <- snq %>%
@@ -15,6 +18,7 @@ nodes_persubj <- snq %>%
   summarize(Nodes = Please.select.all.the.people.who.your.child.sees.in.a.regular.week...Selected.Choice) %>%
   mutate(Nodes = strsplit(as.character(Nodes), ",")) %>%
   unnest(Nodes)
+
 
 
 ######### let's try making something bigger!########### 
@@ -38,18 +42,19 @@ relationships$Race <- NA
 
 
 # create separate functions for race and gender for now 
-snq_gender <- snq[,1:258]
+# this can only have the columnnames with 'gender' for the script to work
+snq_gender <- snq[,92:258]
 
 
 # let's try the fucntion!!
 for (s in 1:length(subjids)) {
-  # print("subjectid")
-  # print(s)
-  # print(subjids[s])
+  print("subjectid")
+  print(s)
+  print(subjids[s])
   # Creates a vector with the index of subjects
   subjindex <- grep(subjids[s], relationships$ParticipantNumber)
-  # print("subjindex")
-  # print(subjindex)
+  print("subjindex")
+  print(subjindex)
   # Where the function should start searching for hits to neccessaryAOI
   starti <- subjindex[1]
   # print(starti)
@@ -60,12 +65,17 @@ for (s in 1:length(subjids)) {
     if (relationships$Nodes[i] == "Parent 1") {
       # get the index of the coloumn for gender
       index <- grep("Parent.1", colnames(snq_gender))
-      # print("index 1")
-      # print(index[1])
+      print("Parent 1")
+      print("index 1")
+      print(index[1])
       index1 <- index[1]
       # get the value of the gender per relationships
       gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
       gender <- as.character(gender)
+      print("gender characterstrng")
+      print(gender)
       # if it is NA, print that so we know the script is working
       if (is.na(gender) == TRUE) {
         relationships[i, 3] <- "NA"
@@ -80,12 +90,15 @@ for (s in 1:length(subjids)) {
     if (relationships$Nodes[i] == "Parent 2") {
       # get the index of the coloumn for gender
       index <- grep("Parent.2", colnames(snq_gender))
-      # print("index 1")
-      # print(index[1])
+      print("Parent 2")
+      print("index 1")
+      print(index[1])
       index1 <- index[1]
       # get the value of the gender per relationships
       gender <- snq_gender[s, index1]
       gender <- as.character(gender)
+      print("gender")
+      print(gender)
       # if it is NA, print that so we know the script is working
       if (is.na(gender) == TRUE) {
         relationships[i, 3] <- "NA"
@@ -100,6 +113,9 @@ for (s in 1:length(subjids)) {
     if (relationships$Nodes[i] == "Sibling 1") {
       # get the index of the coloumn for gender
       index <- grep("Sibling.1", colnames(snq_gender))
+      print("Sibling 1")
+      print("index")
+      print(index)
       # get the value of the gender per relationships
       gender <- snq_gender[s, index]
       gender <- as.character(gender)
@@ -618,4 +634,3 @@ colnames(snq_gender)
 
 
 
-                             
