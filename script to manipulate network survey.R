@@ -639,10 +639,10 @@ for (s in 1:length(subjids)) {
   subjindex <- grep(subjids[s], relationships$ParticipantNumber)
   print("subjindex")
   print(subjindex)
-  # Where the function should start searching for hits to neccessaryAOI
+  # Where the function should start searching per subject
   starti <- subjindex[1]
   # print(starti)
-  # Where the function should stop searching for hits to neccessaryAOI
+  # Where the function should stop searching per subject
   endi <- subjindex[length(subjindex)]
   for (i in starti:endi) {
     ################################## PARENT 1
@@ -712,8 +712,6 @@ for (s in 1:length(subjids)) {
       print("gender")
       print(gender)
       gender <- as.character(gender)
-      print("gender characterstrng")
-      print(gender)
       # if it is NA, print that so we know the script is working
       if (is.na(gender) == TRUE) {
         relationships[i, 3] <- "NA"
@@ -739,8 +737,6 @@ for (s in 1:length(subjids)) {
       print("gender")
       print(gender)
       gender <- as.character(gender)
-      print("gender characterstrng")
-      print(gender)
       # if it is NA, print that so we know the script is working
       if (is.na(gender) == TRUE) {
         relationships[i, 3] <- "NA"
@@ -766,8 +762,6 @@ for (s in 1:length(subjids)) {
       print("gender")
       print(gender)
       gender <- as.character(gender)
-      print("gender characterstrng")
-      print(gender)
       # if it is NA, print that so we know the script is working
       if (is.na(gender) == TRUE) {
         relationships[i, 3] <- "NA"
@@ -793,8 +787,6 @@ for (s in 1:length(subjids)) {
       print("gender")
       print(gender)
       gender <- as.character(gender)
-      print("gender characterstrng")
-      print(gender)
       # if it is NA, print that so we know the script is working
       if (is.na(gender) == TRUE) {
         relationships[i, 3] <- "NA"
@@ -820,8 +812,6 @@ for (s in 1:length(subjids)) {
       print("gender")
       print(gender)
       gender <- as.character(gender)
-      print("gender characterstrng")
-      print(gender)
       # if it is NA, print that so we know the script is working
       if (is.na(gender) == TRUE) {
         relationships[i, 3] <- "NA"
@@ -847,8 +837,6 @@ for (s in 1:length(subjids)) {
       print("gender")
       print(gender)
       gender <- as.character(gender)
-      print("gender characterstrng")
-      print(gender)
       # if it is NA, print that so we know the script is working
       if (is.na(gender) == TRUE) {
         relationships[i, 3] <- "NA"
@@ -874,8 +862,6 @@ for (s in 1:length(subjids)) {
       print("gender")
       print(gender)
       gender <- as.character(gender)
-      print("gender characterstrng")
-      print(gender)
       # if it is NA, print that so we know the script is working
       if (is.na(gender) == TRUE) {
         relationships[i, 3] <- "NA"
@@ -901,8 +887,6 @@ for (s in 1:length(subjids)) {
       print("gender")
       print(gender)
       gender <- as.character(gender)
-      print("gender characterstrng")
-      print(gender)
       # if it is NA, print that so we know the script is working
       if (is.na(gender) == TRUE) {
         relationships[i, 3] <- "NA"
@@ -928,8 +912,6 @@ for (s in 1:length(subjids)) {
       print("gender")
       print(gender)
       gender <- as.character(gender)
-      print("gender characterstrng")
-      print(gender)
       # if it is NA, print that so we know the script is working
       if (is.na(gender) == TRUE) {
         relationships[i, 3] <- "NA"
@@ -955,8 +937,256 @@ for (s in 1:length(subjids)) {
       print("gender")
       print(gender)
       gender <- as.character(gender)
-      print("gender characterstrng")
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
+    ################################### FRIEND 1
+    if (relationships$Nodes[i] == "Friend 1") {
+      # get the index of the coloumn for gender
+      index <- grep("Friend.1", colnames(snq_gender))
+      print("Friend 1")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
       print(gender)
+      gender <- as.character(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
+    ################################### FRIEND 2
+    if (relationships$Nodes[i] == "Friend 2") {
+      # get the index of the coloumn for gender
+      index <- grep("Friend.2", colnames(snq_gender))
+      print("Friend 2")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
+    ################################### FRIEND 3
+    if (relationships$Nodes[i] == "Friend 3") {
+      # get the index of the coloumn for gender
+      index <- grep("Friend.3", colnames(snq_gender))
+      print("Friend 3")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
+    ################################### FRIEND 4
+    if (relationships$Nodes[i] == "Friend 4") {
+      # get the index of the coloumn for gender
+      index <- grep("Friend.4", colnames(snq_gender))
+      print("Friend 4")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
+    ################################### FRIEND 5
+    if (relationships$Nodes[i] == "Friend 5") {
+      # get the index of the coloumn for gender
+      index <- grep("Friend.5", colnames(snq_gender))
+      print("Friend 5")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
+    ################################### FRIEND 6
+    if (relationships$Nodes[i] == "Friend 6") {
+      # get the index of the coloumn for gender
+      index <- grep("Friend.6", colnames(snq_gender))
+      print("Friend 6")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
+    ################################### FRIEND 7
+    if (relationships$Nodes[i] == "Friend 7") {
+      # get the index of the coloumn for gender
+      index <- grep("Friend.7", colnames(snq_gender))
+      print("Friend 7")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
+    ################################### FRIEND 8
+    if (relationships$Nodes[i] == "Friend 8") {
+      # get the index of the coloumn for gender
+      index <- grep("Friend.8", colnames(snq_gender))
+      print("Friend 8")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
+    ################################### FRIEND 9
+    if (relationships$Nodes[i] == "Friend 9") {
+      # get the index of the coloumn for gender
+      index <- grep("Friend.9", colnames(snq_gender))
+      print("Friend 9")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
+    ################################### FRIEND 10
+    if (relationships$Nodes[i] == "Friend 10") {
+      # get the index of the coloumn for gender
+      index <- grep("Friend.10", colnames(snq_gender))
+      print("Friend 10")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
       # if it is NA, print that so we know the script is working
       if (is.na(gender) == TRUE) {
         relationships[i, 3] <- "NA"
@@ -978,3 +1208,4 @@ colnames(snq_gender)
 
 
 
+                                                                                                                                                                                                                                                                                         
