@@ -1332,6 +1332,411 @@ for (s in 1:length(subjids)) {
         print(relationships[i, 3])
       }
     }
+    ################################### DAYCARE CLASS
+    if (relationships$Nodes[i] == "Daycare Class") {
+      # get the index of the coloumn for gender
+      index <- grep("Daycare.Class", colnames(snq_gender))
+      print("Daycare Class")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
+      print("gender characterstrng")
+      print(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
+    ################################### FRIEND 1 PARENT 1
+    if (relationships$Nodes[i] == "Friend 1 Parent 1") {
+      # get the index of the coloumn for gender
+      index <- grep("Friend.1.Parent.1", colnames(snq_gender))
+      print("Friend 1 Parent 1")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
+      print("gender characterstrng")
+      print(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
+    ################################### FRIEND 1 PARENT 2
+    if (relationships$Nodes[i] == "Friend 1 Parent 2") {
+      # get the index of the coloumn for gender
+      index <- grep("Friend.1.Parent.2", colnames(snq_gender))
+      print("Friend 1 Parent 2")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
+      print("gender characterstrng")
+      print(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
+    ################################### FRIEND 2 PARENT 1
+    if (relationships$Nodes[i] == "Friend 2 Parent 1") {
+      # get the index of the coloumn for gender
+      index <- grep("Friend.2.Parent.1", colnames(snq_gender))
+      print("Friend 2 Parent 1")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
+      print("gender characterstrng")
+      print(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
+    ################################### FRIEND 2 PARENT 2
+    if (relationships$Nodes[i] == "Friend 2 Parent 2") {
+      # get the index of the coloumn for gender
+      index <- grep("Friend.2.Parent.2", colnames(snq_gender))
+      print("Friend 2 Parent 2")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
+      print("gender characterstrng")
+      print(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
+    ################################### EXTRACIR TEACHER 1
+    if (relationships$Nodes[i] == "Extracurricular Class 1 Teacher") {
+      # get the index of the coloumn for gender
+      index <- grep("Extracurricular.Class.1.Teacher", colnames(snq_gender))
+      print("Extracurricular.Class.1.Teacher")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
+      print("gender characterstrng")
+      print(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
+    ################################### EXTRACIR TEACHER 2
+    if (relationships$Nodes[i] == "Extracurricular Class 2 Teacher") {
+      # get the index of the coloumn for gender
+      index <- grep("Extracurricular.Class.2.Teacher", colnames(snq_gender))
+      print("Extracurricular.Class.2.Teacher")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
+      print("gender characterstrng")
+      print(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
+    ################################### EXTRACIR TEACHER 3
+    if (relationships$Nodes[i] == "Extracurricular Class 3 Teacher") {
+      # get the index of the coloumn for gender
+      index <- grep("Extracurricular.Class.3.Teacher", colnames(snq_gender))
+      print("Extracurricular.Class.3.Teacher")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
+      print("gender characterstrng")
+      print(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
+    ################################### EXTRACIR TEACHER 4
+    if (relationships$Nodes[i] == "Extracurricular Class 4 Teacher") {
+      # get the index of the coloumn for gender
+      index <- grep("Extracurricular.Class.4.Teacher", colnames(snq_gender))
+      print("Extracurricular.Class.4.Teacher")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
+      print("gender characterstrng")
+      print(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
+    ################################### EXTRACIR TEACHER 5
+    if (relationships$Nodes[i] == "Extracurricular Class 5 Teacher") {
+      # get the index of the coloumn for gender
+      index <- grep("Extracurricular.Class.5.Teacher", colnames(snq_gender))
+      print("Extracurricular.Class.5.Teacher")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
+      print("gender characterstrng")
+      print(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
+    ################################### EXTRACIR TEACHER 6
+    if (relationships$Nodes[i] == "Extracurricular Class 6 Teacher") {
+      # get the index of the coloumn for gender
+      index <- grep("Extracurricular.Class.6.Teacher", colnames(snq_gender))
+      print("Extracurricular.Class.6.Teacher")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
+      print("gender characterstrng")
+      print(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
+    ################################### EXTRACIR TEACHER 7
+    if (relationships$Nodes[i] == "Extracurricular Class 7 Teacher") {
+      # get the index of the coloumn for gender
+      index <- grep("Extracurricular.Class.7.Teacher", colnames(snq_gender))
+      print("Extracurricular.Class.7.Teacher")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
+      print("gender characterstrng")
+      print(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
+    ################################### EXTRACIR TEACHER 8
+    if (relationships$Nodes[i] == "Extracurricular Class 8 Teacher") {
+      # get the index of the coloumn for gender
+      index <- grep("Extracurricular.Class.8.Teacher", colnames(snq_gender))
+      print("Extracurricular.Class.8.Teacher")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
+      print("gender characterstrng")
+      print(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
+    ################################### EXTRACIR TEACHER 9
+    if (relationships$Nodes[i] == "Extracurricular Class 9 Teacher") {
+      # get the index of the coloumn for gender
+      index <- grep("Extracurricular.Class.9.Teacher", colnames(snq_gender))
+      print("Extracurricular.Class.9.Teacher")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
+      print("gender characterstrng")
+      print(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
+    ################################### EXTRACIR TEACHER 10
+    if (relationships$Nodes[i] == "Extracurricular Class 10 Teacher") {
+      # get the index of the coloumn for gender
+      index <- grep("Extracurricular.Class.10.Teacher", colnames(snq_gender))
+      print("Extracurricular.Class.10.Teacher")
+      print("index")
+      print(index)
+      print("index 1")
+      print(index[1])
+      index1 <- index[1]
+      # get the value of the gender per relationships
+      gender <- snq_gender[s, index1]
+      print("gender")
+      print(gender)
+      gender <- as.character(gender)
+      print("gender characterstrng")
+      print(gender)
+      # if it is NA, print that so we know the script is working
+      if (is.na(gender) == TRUE) {
+        relationships[i, 3] <- "NA"
+      }
+      # otherwise, print the value in teh new df
+      else  {
+        relationships[i, 3] <- gender
+        print(relationships[i, 3])
+      }
+    }
   }
 }
 
