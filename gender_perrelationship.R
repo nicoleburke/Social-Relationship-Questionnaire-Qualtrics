@@ -3,11 +3,11 @@
 #### script to get gender for each relationship
 
 gender_perrelationship <- function(dataframe, relationships) {
-  # create a vector of the subjectIDs 
-  subjids <- levels(dataframe$Participant....for.the.researcher.)
-  # create a vector with the columns that the function is supposed to search
+  # make a vector for subjectids 
+  subjids <- unique(dataframe$Participant....for.the.researcher.)
+  # subset the dataframe to just search the gender columns 
   snq_gender <- dataframe[,92:257]
-  # create a dataframe for the columns to search for 
+  # now for the hard stuff!
   for (s in 1:length(subjids)) {
     print("subjectid")
     print(s)
@@ -27,14 +27,15 @@ gender_perrelationship <- function(dataframe, relationships) {
         # get the index of the coloumn for gender
         index <- grep("Parent.1", colnames(snq_gender))
         print("Parent 1")
-        print("index 1")
-        print(index[1])
+        print(subjids[s])
+        #print("index 1")
+        #print(index[1])
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
         print("gender")
-        print(gender)
         gender <- as.character(gender)
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -50,6 +51,7 @@ gender_perrelationship <- function(dataframe, relationships) {
         # get the index of the coloumn for gender
         index <- grep("Parent.2", colnames(snq_gender))
         print("Parent 2")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -60,8 +62,8 @@ gender_perrelationship <- function(dataframe, relationships) {
         #print("gender")
         #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender characterstrng")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -77,6 +79,7 @@ gender_perrelationship <- function(dataframe, relationships) {
         # get the index of the coloumn for gender
         index <- grep("Parent.3", colnames(snq_gender))
         print("Parent 3")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -87,8 +90,8 @@ gender_perrelationship <- function(dataframe, relationships) {
         #print("gender")
         #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender characterstrng")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -104,6 +107,7 @@ gender_perrelationship <- function(dataframe, relationships) {
         # get the index of the coloumn for gender
         index <- grep("Parent.4", colnames(snq_gender))
         print("Parent 4")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -111,9 +115,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
+        print("gender")
         gender <- as.character(gender)
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -129,6 +133,7 @@ gender_perrelationship <- function(dataframe, relationships) {
         # get the index of the coloumn for gender
         index <- grep("Sibling.1", colnames(snq_gender))
         print("Sibling 1")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -136,9 +141,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
+        print("gender")
         gender <- as.character(gender)
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -154,6 +159,7 @@ gender_perrelationship <- function(dataframe, relationships) {
         # get the index of the coloumn for gender
         index <- grep("Sibling.2", colnames(snq_gender))
         print("Sibling 2")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -161,9 +167,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
+        print("gender")
         gender <- as.character(gender)
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -179,6 +185,7 @@ gender_perrelationship <- function(dataframe, relationships) {
         # get the index of the coloumn for gender
         index <- grep("Sibling.3", colnames(snq_gender))
         print("Sibling 3")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -186,9 +193,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
+        print("gender")
         gender <- as.character(gender)
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -204,6 +211,7 @@ gender_perrelationship <- function(dataframe, relationships) {
         # get the index of the coloumn for gender
         index <- grep("Sibling.4", colnames(snq_gender))
         print("Sibling 4")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -211,9 +219,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -229,6 +237,7 @@ gender_perrelationship <- function(dataframe, relationships) {
         # get the index of the coloumn for gender
         index <- grep("Sibling.5", colnames(snq_gender))
         print("Sibling 5")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -236,9 +245,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -253,7 +262,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Sibling 6") {
         # get the index of the coloumn for gender
         index <- grep("Sibling.6", colnames(snq_gender))
-        #print("Sibling 6")
+        print("Sibling 6")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -261,9 +271,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -278,7 +288,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Sibling 7") {
         # get the index of the coloumn for gender
         index <- grep("Sibling.7", colnames(snq_gender))
-        #print("Sibling 7")
+        print("Sibling 7")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -286,9 +297,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -303,7 +314,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Sibling 8") {
         # get the index of the coloumn for gender
         index <- grep("Sibling.8", colnames(snq_gender))
-        #print("Sibling 8")
+        print("Sibling 8")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -311,9 +323,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -328,7 +340,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Sibling 9") {
         # get the index of the coloumn for gender
         index <- grep("Sibling.9", colnames(snq_gender))
-        #print("Sibling 9")
+        print("Sibling 9")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -336,9 +349,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -353,7 +366,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Sibling 10") {
         # get the index of the coloumn for gender
         index <- grep("Sibling.10", colnames(snq_gender))
-        #print("Sibling 10")
+        print("Sibling 10")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -361,9 +375,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -378,7 +392,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Friend 1") {
         # get the index of the coloumn for gender
         index <- grep("Friend.1", colnames(snq_gender))
-        #print("Friend 1")
+        print("Friend 1")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -386,9 +401,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -403,7 +418,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Friend 2") {
         # get the index of the coloumn for gender
         index <- grep("Friend.2", colnames(snq_gender))
-        #print("Friend 2")
+        print("Friend 2")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -411,9 +427,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -428,7 +444,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Friend 3") {
         # get the index of the coloumn for gender
         index <- grep("Friend.3", colnames(snq_gender))
-        #print("Friend 3")
+        print("Friend 3")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -436,9 +453,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -453,7 +470,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Friend 4") {
         # get the index of the coloumn for gender
         index <- grep("Friend.4", colnames(snq_gender))
-        #print("Friend 4")
+        print("Friend 4")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -461,9 +479,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -478,7 +496,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Friend 5") {
         # get the index of the coloumn for gender
         index <- grep("Friend.5", colnames(snq_gender))
-        #print("Friend 5")
+        print("Friend 5")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -486,9 +505,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -503,7 +522,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Friend 6") {
         # get the index of the coloumn for gender
         index <- grep("Friend.6", colnames(snq_gender))
-        #print("Friend 6")
+        print("Friend 6")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -511,9 +531,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -528,7 +548,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Friend 7") {
         # get the index of the coloumn for gender
         index <- grep("Friend.7", colnames(snq_gender))
-        #print("Friend 7")
+        print("Friend 7")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -536,9 +557,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -553,7 +574,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Friend 8") {
         # get the index of the coloumn for gender
         index <- grep("Friend.8", colnames(snq_gender))
-        #print("Friend 8")
+        print("Friend 8")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -561,9 +583,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -578,7 +600,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Friend 9") {
         # get the index of the coloumn for gender
         index <- grep("Friend.9", colnames(snq_gender))
-        #print("Friend 9")
+        print("Friend 9")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -586,9 +609,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -603,7 +626,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Friend 10") {
         # get the index of the coloumn for gender
         index <- grep("Friend.10", colnames(snq_gender))
-        #print("Friend 10")
+        print("Friend 10")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -611,9 +635,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -628,7 +652,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Teacher 1") {
         # get the index of the coloumn for gender
         index <- grep("Teacher.1", colnames(snq_gender))
-        #print("Teacher 1")
+        print("Teacher 1")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -636,11 +661,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -655,7 +678,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Teacher 2") {
         # get the index of the coloumn for gender
         index <- grep("Teacher.2", colnames(snq_gender))
-        #print("Teacher 2")
+        print("Teacher 2")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -663,11 +687,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -682,7 +704,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Teacher 3") {
         # get the index of the coloumn for gender
         index <- grep("Teacher.3", colnames(snq_gender))
-        #print("Teacher 3")
+        print("Teacher 3")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -690,11 +713,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -709,7 +730,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Teacher 4") {
         # get the index of the coloumn for gender
         index <- grep("Teacher.4", colnames(snq_gender))
-        #print("Teacher 4")
+        print("Teacher 4")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -717,11 +739,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -736,7 +756,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Teacher 5") {
         # get the index of the coloumn for gender
         index <- grep("Teacher.5", colnames(snq_gender))
-        #print("Teacher 5")
+        print("Teacher 5")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -744,11 +765,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -763,7 +782,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Daycare Class") {
         # get the index of the coloumn for gender
         index <- grep("Daycare.Class", colnames(snq_gender))
-        #print("Daycare Class")
+        print("Daycare Class")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -771,11 +791,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -790,7 +808,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Friend 1 Parent 1") {
         # get the index of the coloumn for gender
         index <- grep("Friend.1.Parent.1", colnames(snq_gender))
-        #print("Friend 1 Parent 1")
+        print("Friend 1 Parent 1")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -798,11 +817,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -817,7 +834,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Friend 1 Parent 2") {
         # get the index of the coloumn for gender
         index <- grep("Friend.1.Parent.2", colnames(snq_gender))
-        #print("Friend 1 Parent 2")
+        print("Friend 1 Parent 2")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -825,11 +843,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -844,7 +860,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Friend 2 Parent 1") {
         # get the index of the coloumn for gender
         index <- grep("Friend.2.Parent.1", colnames(snq_gender))
-        #print("Friend 2 Parent 1")
+        print("Friend 2 Parent 1")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -852,11 +869,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -871,7 +886,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Friend 2 Parent 2") {
         # get the index of the coloumn for gender
         index <- grep("Friend.2.Parent.2", colnames(snq_gender))
-        #print("Friend 2 Parent 2")
+        print("Friend 2 Parent 2")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -879,11 +895,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -898,7 +912,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Extracurricular Class 1 Teacher") {
         # get the index of the coloumn for gender
         index <- grep("Extracurricular.Class.1.Teacher", colnames(snq_gender))
-        #print("Extracurricular.Class.1.Teacher")
+        print("Extracurricular.Class.1.Teacher")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -906,11 +921,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -925,7 +938,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Extracurricular Class 2 Teacher") {
         # get the index of the coloumn for gender
         index <- grep("Extracurricular.Class.2.Teacher", colnames(snq_gender))
-        #print("Extracurricular.Class.2.Teacher")
+        print("Extracurricular.Class.2.Teacher")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -933,11 +947,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -952,7 +964,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Extracurricular Class 3 Teacher") {
         # get the index of the coloumn for gender
         index <- grep("Extracurricular.Class.3.Teacher", colnames(snq_gender))
-        #print("Extracurricular.Class.3.Teacher")
+        print("Extracurricular.Class.3.Teacher")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -960,11 +973,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -979,7 +990,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Extracurricular Class 4 Teacher") {
         # get the index of the coloumn for gender
         index <- grep("Extracurricular.Class.4.Teacher", colnames(snq_gender))
-        #print("Extracurricular.Class.4.Teacher")
+        print("Extracurricular.Class.4.Teacher")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -987,11 +999,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -1006,7 +1016,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Extracurricular Class 5 Teacher") {
         # get the index of the coloumn for gender
         index <- grep("Extracurricular.Class.5.Teacher", colnames(snq_gender))
-        #print("Extracurricular.Class.5.Teacher")
+        print("Extracurricular.Class.5.Teacher")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1014,11 +1025,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -1033,7 +1042,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Extracurricular Class 6 Teacher") {
         # get the index of the coloumn for gender
         index <- grep("Extracurricular.Class.6.Teacher", colnames(snq_gender))
-        #print("Extracurricular.Class.6.Teacher")
+        print("Extracurricular.Class.6.Teacher")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1041,11 +1051,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -1060,7 +1068,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Extracurricular Class 7 Teacher") {
         # get the index of the coloumn for gender
         index <- grep("Extracurricular.Class.7.Teacher", colnames(snq_gender))
-        #print("Extracurricular.Class.7.Teacher")
+        print("Extracurricular.Class.7.Teacher")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1068,11 +1077,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -1087,7 +1094,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Extracurricular Class 8 Teacher") {
         # get the index of the coloumn for gender
         index <- grep("Extracurricular.Class.8.Teacher", colnames(snq_gender))
-        #print("Extracurricular.Class.8.Teacher")
+        print("Extracurricular.Class.8.Teacher")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1095,11 +1103,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -1114,7 +1120,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Extracurricular Class 9 Teacher") {
         # get the index of the coloumn for gender
         index <- grep("Extracurricular.Class.9.Teacher", colnames(snq_gender))
-        #print("Extracurricular.Class.9.Teacher")
+        print("Extracurricular.Class.9.Teacher")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1122,11 +1129,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -1141,7 +1146,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Extracurricular Class 10 Teacher") {
         # get the index of the coloumn for gender
         index <- grep("Extracurricular.Class.10.Teacher", colnames(snq_gender))
-        #print("Extracurricular.Class.10.Teacher")
+        print("Extracurricular.Class.10.Teacher")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1149,11 +1155,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -1168,7 +1172,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Extracurricular Class 1 Kids") {
         # get the index of the coloumn for gender
         index <- grep("Extracurricular.Class.1.Kids", colnames(snq_gender))
-        #print("Extracurricular.Class.1.Kids")
+        print("Extracurricular.Class.1.Kids")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1176,11 +1181,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -1195,7 +1198,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Extracurricular Class 2 Kids") {
         # get the index of the coloumn for gender
         index <- grep("Extracurricular.Class.2.Kids", colnames(snq_gender))
-        #print("Extracurricular.Class.2.Kids")
+        print("Extracurricular.Class.2.Kids")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1203,11 +1207,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -1222,7 +1224,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Extracurricular Class 3 Kids") {
         # get the index of the coloumn for gender
         index <- grep("Extracurricular.Class.3.Kids", colnames(snq_gender))
-        #print("Extracurricular.Class.3.Kids")
+        print("Extracurricular.Class.3.Kids")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1230,11 +1233,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -1249,7 +1250,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Extracurricular Class 4 Kids") {
         # get the index of the coloumn for gender
         index <- grep("Extracurricular.Class.4.Kids", colnames(snq_gender))
-        #print("Extracurricular.Class.4.Kids")
+        print("Extracurricular.Class.4.Kids")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1257,11 +1259,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -1276,7 +1276,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Extracurricular Class 5 Kids") {
         # get the index of the coloumn for gender
         index <- grep("Extracurricular.Class.5.Kids", colnames(snq_gender))
-        #print("Extracurricular.Class.5.Kids")
+        print("Extracurricular.Class.5.Kids")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1284,11 +1285,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -1303,7 +1302,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Extracurricular Class 6 Kids") {
         # get the index of the coloumn for gender
         index <- grep("Extracurricular.Class.6.Kids", colnames(snq_gender))
-        #print("Extracurricular.Class.6.Kids")
+        print("Extracurricular.Class.6.Kids")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1311,11 +1311,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -1330,7 +1328,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Extracurricular Class 7 Kids") {
         # get the index of the coloumn for gender
         index <- grep("Extracurricular.Class.7.Kids", colnames(snq_gender))
-        #print("Extracurricular.Class.7.Kids")
+        print("Extracurricular.Class.7.Kids")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1338,11 +1337,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -1357,7 +1354,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Extracurricular Class 8 Kids") {
         # get the index of the coloumn for gender
         index <- grep("Extracurricular.Class.8.Kids", colnames(snq_gender))
-        #print("Extracurricular.Class.8.Kids")
+        print("Extracurricular.Class.8.Kids")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1365,11 +1363,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -1384,7 +1380,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Extracurricular Class 9 Kids") {
         # get the index of the coloumn for gender
         index <- grep("Extracurricular.Class.9.Kids", colnames(snq_gender))
-        #print("Extracurricular.Class.9.Kids")
+        print("Extracurricular.Class.9.Kids")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1392,11 +1389,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -1411,7 +1406,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Extracurricular Class 10 Kids") {
         # get the index of the coloumn for gender
         index <- grep("Extracurricular.Class.10.Kids", colnames(snq_gender))
-        #print("Extracurricular.Class.10.Kids")
+        print("Extracurricular.Class.10.Kids")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1419,11 +1415,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -1438,7 +1432,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Daycare Assistant 1") {
         # get the index of the coloumn for gender
         index <- grep("Daycare.Assistant.1", colnames(snq_gender))
-        #print("Daycare Assistant 1")
+        print("Daycare Assistant 1")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1446,11 +1441,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -1465,7 +1458,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Daycare Assistant 2") {
         # get the index of the coloumn for gender
         index <- grep("Daycare.Assistant.2", colnames(snq_gender))
-        #print("Daycare Assistant 2")
+        print("Daycare Assistant 2")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1473,11 +1467,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -1492,7 +1484,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Daycare Assistant 3") {
         # get the index of the coloumn for gender
         index <- grep("Daycare.Assistant.3", colnames(snq_gender))
-        #print("Daycare Assistant 3")
+        print("Daycare Assistant 3")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1500,11 +1493,9 @@ gender_perrelationship <- function(dataframe, relationships) {
         index1 <- index[1]
         # get the value of the gender per relationships
         gender <- snq_gender[s, index1]
-        #print("gender")
-        #print(gender)
         gender <- as.character(gender)
-        #print("gender characterstrng")
-        #print(gender)
+        print("gender")
+        print(gender)
         # if it is NA, print that so we know the script is working
         if (is.na(gender) == TRUE) {
           relationships[i, 3] <- "NA"
@@ -1519,7 +1510,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "ExtendedFam1") {
         # get the index of the coloumn for gender
         index <- grep("ExtendedFam1", colnames(snq_gender))
-        #print("ExtendedFam1")
+        print("ExtendedFam1")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1546,7 +1538,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "ExtendedFam2") {
         # get the index of the coloumn for gender
         index <- grep("ExtendedFam2", colnames(snq_gender))
-        #print("ExtendedFam2")
+        print("ExtendedFam2")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1573,7 +1566,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "ExtendedFam3") {
         # get the index of the coloumn for gender
         index <- grep("ExtendedFam3", colnames(snq_gender))
-        #print("ExtendedFam3")
+        print("ExtendedFam3")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1600,7 +1594,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "ExtendedFam4") {
         # get the index of the coloumn for gender
         index <- grep("ExtendedFam4", colnames(snq_gender))
-        #print("ExtendedFam4")
+        print("ExtendedFam4")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1627,7 +1622,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "ExtendedFam5") {
         # get the index of the coloumn for gender
         index <- grep("ExtendedFam5", colnames(snq_gender))
-        #print("ExtendedFam5")
+        print("ExtendedFam5")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1654,7 +1650,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "ExtendedFam6") {
         # get the index of the coloumn for gender
         index <- grep("ExtendedFam6", colnames(snq_gender))
-        #print("ExtendedFam6")
+        print("ExtendedFam6")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1681,7 +1678,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "ExtendedFam7") {
         # get the index of the coloumn for gender
         index <- grep("ExtendedFam7", colnames(snq_gender))
-        #print("ExtendedFam7")
+        print("ExtendedFam7")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1708,7 +1706,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "ExtendedFam8") {
         # get the index of the coloumn for gender
         index <- grep("ExtendedFam8", colnames(snq_gender))
-        #print("ExtendedFam8")
+        print("ExtendedFam8")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1735,7 +1734,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "ExtendedFam9") {
         # get the index of the coloumn for gender
         index <- grep("ExtendedFam9", colnames(snq_gender))
-        #print("ExtendedFam9")
+        print("ExtendedFam9")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1762,7 +1762,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "ExtendedFam10") {
         # get the index of the coloumn for gender
         index <- grep("ExtendedFam10", colnames(snq_gender))
-        #print("ExtendedFam10")
+        print("ExtendedFam10")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1789,7 +1790,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "ExtendedFam11") {
         # get the index of the coloumn for gender
         index <- grep("ExtendedFam11", colnames(snq_gender))
-        #print("ExtendedFam11")
+        print("ExtendedFam11")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1816,7 +1818,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "ExtendedFam12") {
         # get the index of the coloumn for gender
         index <- grep("ExtendedFam12", colnames(snq_gender))
-        #print("ExtendedFam12")
+        print("ExtendedFam12")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1843,7 +1846,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "ExtendedFam13") {
         # get the index of the coloumn for gender
         index <- grep("ExtendedFam13", colnames(snq_gender))
-        #print("ExtendedFam13")
+        print("ExtendedFam13")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1870,7 +1874,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "ExtendedFam14") {
         # get the index of the coloumn for gender
         index <- grep("ExtendedFam14", colnames(snq_gender))
-        #print("ExtendedFam14")
+        print("ExtendedFam14")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1897,7 +1902,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "ExtendedFam15") {
         # get the index of the coloumn for gender
         index <- grep("ExtendedFam15", colnames(snq_gender))
-        #print("ExtendedFam15")
+        print("ExtendedFam15")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1924,7 +1930,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Grandparent 1") {
         # get the index of the coloumn for gender
         index <- grep("Grandparent.1", colnames(snq_gender))
-        #print("Grandparent.1")
+        print("Grandparent.1")
+        print(subjids[s])
         #print("index")
         #print(index)
         #print("index 1")
@@ -1951,7 +1958,7 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Grandparent 2") {
         # get the index of the coloumn for gender
         index <- grep("Grandparent.2", colnames(snq_gender))
-        #print("Grandparent.2")
+        print("Grandparent.2")
         #print("index")
         #print(index)
         #print("index 1")
@@ -1978,7 +1985,7 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Grandparent 3") {
         # get the index of the coloumn for gender
         index <- grep("Grandparent.3", colnames(snq_gender))
-        #print("Grandparent.3")
+        print("Grandparent.3")
         #print("index")
         #print(index)
         #print("index 1")
@@ -2005,7 +2012,7 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Grandparent 4") {
         # get the index of the coloumn for gender
         index <- grep("Grandparent.4", colnames(snq_gender))
-        #print("Grandparent.4")
+        print("Grandparent.4")
         #print("index")
         #print(index)
         #print("index 1")
@@ -2032,7 +2039,7 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Grandparent 5") {
         # get the index of the coloumn for gender
         index <- grep("Grandparent.5", colnames(snq_gender))
-        #print("Grandparent.5")
+        print("Grandparent.5")
         #print("index")
         #print(index)
         #print("index 1")
@@ -2059,7 +2066,7 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Nanny/Babysitter 1") {
         # get the index of the coloumn for gender
         index <- grep("Nanny.Babysitter.1", colnames(snq_gender))
-        #print("Nanny.Babysitter.1")
+        print("Nanny.Babysitter.1")
         #print("index")
         #print(index)
         #print("index 1")
@@ -2086,7 +2093,7 @@ gender_perrelationship <- function(dataframe, relationships) {
       if (relationships$Nodes[i] == "Nanny/Babysitter 2") {
         # get the index of the coloumn for gender
         index <- grep("Nanny.Babysitter.2", colnames(snq_gender))
-        #print("Nanny.Babysitter.2")
+        print("Nanny.Babysitter.2")
         #print("index")
         #print(index)
         #print("index 1")
@@ -2112,8 +2119,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       ################################### OTHER1
       if (relationships$Nodes[i] == "Other1") {
         # get the index of the coloumn for gender
-        index <- grep("Other1", colnames(snq_gender))
-        #print("Other1")
+        index <- grep("Other.1", colnames(snq_gender))
+        print("Other1")
         #print("index")
         #print(index)
         #print("index 1")
@@ -2139,8 +2146,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       ################################### OTHER2
       if (relationships$Nodes[i] == "Other2") {
         # get the index of the coloumn for gender
-        index <- grep("Other2", colnames(snq_gender))
-        #print("Other2")
+        index <- grep("Other.2", colnames(snq_gender))
+        print("Other2")
         #print("index")
         #print(index)
         #print("index 1")
@@ -2166,8 +2173,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       ################################### OTHER3
       if (relationships$Nodes[i] == "Other3") {
         # get the index of the coloumn for gender
-        index <- grep("Other3", colnames(snq_gender))
-        #print("Other3")
+        index <- grep("Other.3", colnames(snq_gender))
+        print("Other3")
         #print("index")
         #print(index)
         #print("index 1")
@@ -2193,8 +2200,8 @@ gender_perrelationship <- function(dataframe, relationships) {
       ################################### OTHER4
       if (relationships$Nodes[i] == "Other4") {
         # get the index of the coloumn for gender
-        index <- grep("Other4", colnames(snq_gender))
-        #print("Other4")
+        index <- grep("Other.4", colnames(snq_gender))
+        print("Other4")
         #print("index")
         #print(index)
         #print("index 1")
@@ -2219,13 +2226,13 @@ gender_perrelationship <- function(dataframe, relationships) {
       }
     }
   }
+  return(relationships)
 }
 
-gender_perrelationship(dataframe, relationships)
 
 
 
 
 
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+
