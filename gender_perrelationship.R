@@ -2228,11 +2228,4 @@ gender_perrelationship <- function(dataframe, relationships) {
   }
   return(relationships)
 }
-
-
-
-
-
-
-
-
+        
