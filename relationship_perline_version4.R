@@ -6,7 +6,6 @@
 relationship_perline <- function(qualtricsoutput) {
   library(tidyverse)
   newdataframe <- qualtricsoutput %>%
-    rename(SubjectID = Participant....for.the.researcher.) %>%
     group_by(SubjectID) %>%
     summarize(Nodes = Please.select.all.the.people.who.your.child.sees.in.a.regular.week...Selected.Choice) %>%
     mutate(Nodes = strsplit(as.character(Nodes), ",")) %>%
