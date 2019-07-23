@@ -11,6 +11,7 @@ relationship_perline <- function(qualtricsoutput) {
     summarize(Nodes = Please.select.all.the.people.who.your.child.sees.in.a.regular.week...Selected.Choice) %>%
     mutate(Nodes = strsplit(as.character(Nodes), ",")) %>%
     unnest(Nodes)
+    newdataframe$Gender <- NA
   return(newdataframe)
 }
 
