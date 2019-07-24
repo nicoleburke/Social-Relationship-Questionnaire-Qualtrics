@@ -6,7 +6,9 @@
 qualdricsoutput_df <- read.csv("Social Relationship Survey Version 4_July 23, 2019_09.16.csv")
 
 #### test clean_qualtrics functions #### 
+qualdricsoutput_df$Participant....for.the.researcher.
 qualdricsoutput_df <- clean_qualtrics(qualdricsoutput_df)
+qualdricsoutput_df$SubjectID
 
 
 #### test relationship_perline functions #### 

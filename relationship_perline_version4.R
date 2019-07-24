@@ -14,21 +14,6 @@ relationship_perline <- function(qualtricsoutput) {
   return(newdataframe)
 }
 
-# VERSION 3
-#relationship_perline <- function(qualtricsoutput) {
-  library(tidyverse)
-  newdataframe <- qualtricsoutput %>%
-    group_by(Participant....for.the.researcher.) %>%
-    summarize(Nodes = Please.select.all.the.people.who.your.child.sees.in.a.regular.week...Selected.Choice) %>%
-    mutate(Nodes = strsplit(as.character(Nodes), ",")) %>%
-    unnest(Nodes)
-  newdataframe$Gender <- NA
-  newdataframe$Race <- NA
-  newdataframe$Language <- NA
-  newdataframe$Age <- NA
-  return(newdataframe)
-}
-
 
 
 
