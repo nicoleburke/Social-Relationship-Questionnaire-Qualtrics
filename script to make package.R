@@ -15,10 +15,27 @@ qualdricsoutput_df$SubjectID
 test1 <- relationship_perline(qualdricsoutput_df)
 # it works! 
 
+#### get rid of missing columns in qualtrics output 
+# import dummydata
+dummydata <- read.csv("dummydata.csv")
+dummydata <- clean_qualtrics(dummydata)
+str(dummydata)
+
+df[colSums(!is.na(df)) > 0]
+
+trythis <- dummydata[colSums(!is.na(dummydata)) > 0]
+
+
+
 
 ########## try getting gender ############ 
 qualdricsoutput_df
 test1 
+
+# this returns the column number that phrases appears 
+testindex <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualdricsoutput_df))
+
+
 
 # a vector with the subjectIDs from the Qualtrics Survey 
 subjids <- unique(qualdricsoutput_df$SubjectID)
@@ -38,7 +55,8 @@ for (s in 1:length(subjids)) {
   endi <- subjindex[length(subjindex)]
   for (i in starti:endi) {
     if (test1$Nodes[i] == "Parent 1") {
-      test1[i,3] <- "it worked"
+      itworked <- qualdricsoutput_df[s,267]
+      test1[i,3] <- itworked
     }
   }
 }
