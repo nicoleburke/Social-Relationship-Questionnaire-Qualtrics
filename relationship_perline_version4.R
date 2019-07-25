@@ -11,6 +11,7 @@ relationship_perline <- function(qualtricsoutput) {
     mutate(Nodes = strsplit(as.character(Nodes), ",")) %>%
     unnest(Nodes)
     newdataframe$Gender <- NA
+    
   return(newdataframe)
 }
 

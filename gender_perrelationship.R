@@ -29,7 +29,23 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
         for (x in 1:length(indexcol)) {
           if (as.character(qualtricsoutput[s,indexcol[x]]) == "Parent 1") {
             # get the value in qualdricsoutput
-            gender <- qualtricsoutput[s,indexcol[x]+1]
+            gender <- qualtricsoutput[s,indexcol[x]+83]
+            # needs to be a value
+            gender <- as.character(gender)
+            relationshipdf[i,3] <- gender
+          }
+        }
+      }
+      ############################################## PARENT 2
+      if (relationshipdf$Nodes[i] == "Parent 2") {
+        print("s")
+        print(s)
+        # 's' will specify what row to look for in the qualtricsoupt, we need the column index
+        indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
+        for (x in 1:length(indexcol)) {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "Parent 2") {
+            # get the value in qualdricsoutput
+            gender <- qualtricsoutput[s,indexcol[x]+83]
             # needs to be a value
             gender <- as.character(gender)
             relationshipdf[i,3] <- gender
