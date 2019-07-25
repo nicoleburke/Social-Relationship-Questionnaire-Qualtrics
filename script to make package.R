@@ -17,12 +17,6 @@ write.csv(qualdricsoutput_df, file = "/Users/nicoleburke/Desktop/To work on data
 test1 <- relationship_perline(qualdricsoutput_df)
 # it works! 
 
-#### get rid of missing columns in qualtrics output 
-# import dummydata
-dummydata <- read.csv("dummydata.csv")
-dummydata <- clean_qualtrics(dummydata)
-str(dummydata)
-
 # this code workded! 
 df[colSums(!is.na(df)) > 0]
 trythis <- dummydata[colSums(!is.na(dummydata)) > 0]
@@ -31,13 +25,9 @@ trythis <- dummydata[colSums(!is.na(dummydata)) > 0]
 
 
 ########## try getting gender ############ 
-qualdricsoutput_df
-test1 
-
 # this returns the column number that phrases appears 
 testindex <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualdricsoutput_df))
 testindex
-
 
 # a vector with the subjectIDs from the Qualtrics Survey 
 subjids <- unique(qualdricsoutput_df$SubjectID)
@@ -64,10 +54,10 @@ for (s in 1:length(subjids)) {
       for (x in 1:length(indexcol)) {
         if (as.character(qualdricsoutput_df[s,indexcol[x]]) == "Parent 1") {
           # get the value in qualdricsoutput
-          itworked <- qualdricsoutput_df[s,indexcol[x]+1]
+          gender <- qualdricsoutput_df[s,indexcol[x]+1]
           # needs to be a value
-          itworked <- as.character(itworked)
-          test1[i,3] <- itworked
+          gender <- as.character(gender)
+          test1[i,3] <- gender
         }
       }
     }
@@ -75,27 +65,10 @@ for (s in 1:length(subjids)) {
 }
 
 
-
-
-
-# make a vector for subjectids 
-subjids <- unique(qualdricsoutput_df$Participant....for.the.researcher.)
-# now for the hard stuff!
-for (s in 1:length(subjids)) {
-  print("subjectid")
-  print(s)
-  print(subjids[s])
-  # Creates a vector with the index of subjects
-  subjindex <- grep(subjids[s], test1$SubjectID)
-  print("subjindex")
-  print(subjindex)
-  # Where the function should start searching per subject
-  starti <- subjindex[1]
-  # print(starti)
-  # Where the function should stop searching per subject
-  endi <- subjindex[length(subjindex)]
+test1 <- gender_perrelationship(qualdricsoutput_df, test1)
 
 
 
 
-# Please.answer.the.following.questions.for.this.person.people...Selected.Choice
+
+
