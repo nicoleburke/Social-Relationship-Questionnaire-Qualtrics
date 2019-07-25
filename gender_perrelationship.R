@@ -20,6 +20,7 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
     # Where the function should stop searching per subject in the newdataframe
     endi <- subjindex[length(subjindex)]
     for (i in starti:endi) {
+      ############################################## PARENT 1 
       if (relationshipdf$Nodes[i] == "Parent 1") {
         print("s")
         print(s)
