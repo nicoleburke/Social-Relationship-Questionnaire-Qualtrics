@@ -939,7 +939,7 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
         # 's' will specify what row to look for in the qualtricsoupt, we need the column index
         indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
         for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam 1") {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam1") {
             # get the value in qualdricsoutput
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
@@ -955,7 +955,7 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
         # 's' will specify what row to look for in the qualtricsoupt, we need the column index
         indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
         for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam 2") {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam2") {
             # get the value in qualdricsoutput
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
@@ -971,7 +971,7 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
         # 's' will specify what row to look for in the qualtricsoupt, we need the column index
         indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
         for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam 3") {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam3") {
             # get the value in qualdricsoutput
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
@@ -987,7 +987,7 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
         # 's' will specify what row to look for in the qualtricsoupt, we need the column index
         indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
         for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam 4") {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam4") {
             # get the value in qualdricsoutput
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
@@ -1003,7 +1003,7 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
         # 's' will specify what row to look for in the qualtricsoupt, we need the column index
         indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
         for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam 5") {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam5") {
             # get the value in qualdricsoutput
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
@@ -1019,7 +1019,7 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
         # 's' will specify what row to look for in the qualtricsoupt, we need the column index
         indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
         for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam 6") {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam6") {
             # get the value in qualdricsoutput
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
@@ -1035,7 +1035,7 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
         # 's' will specify what row to look for in the qualtricsoupt, we need the column index
         indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
         for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam 7") {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam7") {
             # get the value in qualdricsoutput
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
@@ -1051,7 +1051,7 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
         # 's' will specify what row to look for in the qualtricsoupt, we need the column index
         indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
         for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam 8") {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam8") {
             # get the value in qualdricsoutput
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
@@ -1067,7 +1067,7 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
         # 's' will specify what row to look for in the qualtricsoupt, we need the column index
         indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
         for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam 9") {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam9") {
             # get the value in qualdricsoutput
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
@@ -1083,7 +1083,7 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
         # 's' will specify what row to look for in the qualtricsoupt, we need the column index
         indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
         for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam 10") {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam10") {
             # get the value in qualdricsoutput
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
@@ -1099,7 +1099,7 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
         # 's' will specify what row to look for in the qualtricsoupt, we need the column index
         indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
         for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam 11") {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam11") {
             # get the value in qualdricsoutput
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
@@ -1115,7 +1115,7 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
         # 's' will specify what row to look for in the qualtricsoupt, we need the column index
         indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
         for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam 12") {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam12") {
             # get the value in qualdricsoutput
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
@@ -1131,7 +1131,7 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
         # 's' will specify what row to look for in the qualtricsoupt, we need the column index
         indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
         for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam 13") {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam13") {
             # get the value in qualdricsoutput
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
@@ -1147,7 +1147,7 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
         # 's' will specify what row to look for in the qualtricsoupt, we need the column index
         indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
         for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam 14") {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam14") {
             # get the value in qualdricsoutput
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
@@ -1163,7 +1163,7 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
         # 's' will specify what row to look for in the qualtricsoupt, we need the column index
         indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
         for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam 15") {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam15") {
             # get the value in qualdricsoutput
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
