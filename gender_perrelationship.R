@@ -32,7 +32,12 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -48,7 +53,12 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
