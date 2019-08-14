@@ -32,9 +32,11 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
+            # if data is blank, print "MISSING"
             if (gender == "") {
               relationshipdf[i,3] <- "MISSING"
             }
+            # otherwise, print value
             else {
               relationshipdf[i,3] <- gender
             }
@@ -74,7 +76,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -90,7 +99,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -106,7 +122,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -122,7 +145,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -138,7 +168,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -154,7 +191,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -170,7 +214,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -186,7 +237,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -202,7 +260,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -218,7 +283,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -234,7 +306,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -250,7 +329,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -266,7 +352,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -282,7 +375,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -298,7 +398,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -314,7 +421,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -330,7 +444,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -346,7 +467,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -362,7 +490,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -378,7 +513,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -394,7 +536,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -410,7 +559,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -426,7 +582,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -442,7 +605,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -458,7 +628,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -474,7 +651,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -490,7 +674,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -506,7 +697,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -522,7 +720,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -538,7 +743,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -554,7 +766,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -570,7 +789,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -586,7 +812,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -602,7 +835,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -618,7 +858,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -634,7 +881,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -650,7 +904,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -666,7 +927,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -682,7 +950,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -698,7 +973,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -714,7 +996,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -730,7 +1019,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -746,7 +1042,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -762,7 +1065,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -778,7 +1088,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -794,7 +1111,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -810,7 +1134,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -826,7 +1157,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -842,7 +1180,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -858,7 +1203,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -874,7 +1226,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -890,7 +1249,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -906,7 +1272,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -922,7 +1295,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -938,7 +1318,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -954,7 +1341,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -970,7 +1364,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -986,7 +1387,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -1002,7 +1410,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -1018,7 +1433,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -1034,7 +1456,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -1050,7 +1479,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -1066,7 +1502,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -1082,7 +1525,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -1098,7 +1548,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -1114,7 +1571,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -1130,7 +1594,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -1146,7 +1617,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -1162,7 +1640,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -1178,7 +1663,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -1194,7 +1686,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -1210,7 +1709,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -1226,7 +1732,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -1242,7 +1755,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -1258,7 +1778,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -1274,7 +1801,14 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
@@ -1290,23 +1824,106 @@ gender_perrelationship <- function(qualtricsoutput, relationshipdf) {
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
-      ############################################## OTHER
-      if (relationshipdf$Nodes[i] == "Other") {
+      ############################################## OTHER 1 
+      if (relationshipdf$Nodes[i] == "Other1") {
         print("s")
         print(s)
         # 's' will specify what row to look for in the qualtricsoupt, we need the column index
         indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
         for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "Other") {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "Other 1") {
             # get the value in qualdricsoutput
             gender <- qualtricsoutput[s,indexcol[x]+84]
             # needs to be a value
             gender <- as.character(gender)
-            relationshipdf[i,3] <- gender
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
+          }
+        }
+      }
+      ############################################## OTHER 2 
+      if (relationshipdf$Nodes[i] == "Other2") {
+        print("s")
+        print(s)
+        # 's' will specify what row to look for in the qualtricsoupt, we need the column index
+        indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
+        for (x in 1:length(indexcol)) {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "Other 2") {
+            # get the value in qualdricsoutput
+            gender <- qualtricsoutput[s,indexcol[x]+84]
+            # needs to be a value
+            gender <- as.character(gender)
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
+          }
+        }
+      }
+      ############################################## OTHER 3 
+      if (relationshipdf$Nodes[i] == "Other3") {
+        print("s")
+        print(s)
+        # 's' will specify what row to look for in the qualtricsoupt, we need the column index
+        indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
+        for (x in 1:length(indexcol)) {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "Other 3") {
+            # get the value in qualdricsoutput
+            gender <- qualtricsoutput[s,indexcol[x]+84]
+            # needs to be a value
+            gender <- as.character(gender)
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
+          }
+        }
+      }
+      ############################################## OTHER 4 
+      if (relationshipdf$Nodes[i] == "Other4") {
+        print("s")
+        print(s)
+        # 's' will specify what row to look for in the qualtricsoupt, we need the column index
+        indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
+        for (x in 1:length(indexcol)) {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "Other 4") {
+            # get the value in qualdricsoutput
+            gender <- qualtricsoutput[s,indexcol[x]+84]
+            # needs to be a value
+            gender <- as.character(gender)
+            # if data is blank, print "MISSING"
+            if (gender == "") {
+              relationshipdf[i,3] <- "MISSING"
+            }
+            # otherwise, print value
+            else {
+              relationshipdf[i,3] <- gender
+            }
           }
         }
       }
