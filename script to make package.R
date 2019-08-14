@@ -49,6 +49,8 @@ qualdricsoutput_df$SubjectID
 test1 <- relationship_perline(qualdricsoutput_df)
 test1 <- gender_perrelationship(qualdricsoutput_df, test1)
 
+# test the race function
+test1 <- race_perrelationship(qualdricsoutput_df, test1)
 
 
 
