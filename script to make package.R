@@ -12,7 +12,7 @@ qualdricsoutput_df$Participant....for.the.researcher.
 qualdricsoutput_df <- clean_qualtrics(qualdricsoutput_df)
 qualdricsoutput_df$SubjectID
 # write this out to see what it looks like
-write.csv(qualdricsoutput_df, file = "/Users/nicoleburke/Desktop/To work on data off server/Social-Relationship-Questionnaire-Qualtrics/newqualtricsoutput.csv")
+# write.csv(qualdricsoutput_df, file = "/Users/nicoleburke/Desktop/To work on data off server/Social-Relationship-Questionnaire-Qualtrics/newqualtricsoutput.csv")
 
 
 #### test relationship_perline functions #### 
@@ -53,11 +53,34 @@ test1 <- gender_perrelationship(qualdricsoutput_df, test1)
 test1 <- race_perrelationship(qualdricsoutput_df, test1)
 
 
+### Import the manuel check and compare to script output
+manuelentry <- read.csv("Manual Social Network Entry_tocheck.csv")
+str(manuelentry)
 
+# make sure both dfs have the same column names 
+colnames(manuelentry)
+colnames(test1)
 
+# make sure both dfs have the same subjectIDs
+unique(manuelentry$SubjectID)
+unique(test1$SubjectID)
+# exclude subject 22 from test1
+test1 <- subset(test1, SubjectID < 22)
+test1 <- subset(test1, SubjectID != 17)
 
+### test to see if they are giving the same values 
+compare_df <- test1 == manuelentry
 
+#### import the check dataframe 
+checkdf <- read.csv("Manual Social Network Entry_tocheck.csv")
+unique(checkdf$check.what.went.wrong)
+checkdf <- subset(checkdf, check.what.went.wrong == "check")
 
+# see what nodes are causing problems
+problemnodes <- as.data.frame(checkdf$Nodes[1:55])
+# write out sheet 
+write.csv(problemnodes, file = "/Volumes/woodwardlab/Data_Lab Members/Nicole Burke/Social Network/Social Bias/Data/for making the network survey/Social-Relationship-Questionnaire-Qualtrics/problemnodes.csv")
 
-
+# where you're at - you have at least identified the problem lines. 
+#     There are 56 relationships that have mismatches 
 
