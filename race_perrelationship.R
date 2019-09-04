@@ -386,14 +386,14 @@ race_perrelationship <- function(qualtricsoutput, relationshipdf) {
           }
         }
       }
-      ############################################## FRIEND 4
-      if (relationshipdf$Nodes[i] == "Friend 4") {
+      ############################################## FRIEND 3
+      if (relationshipdf$Nodes[i] == "Friend 3") {
         print("s")
         print(s)
         # 's' will specify what row to look for in the qualtricsoupt, we need the column index
         indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
         for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 4") {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "Friend 3") {
             # get the value in qualdricsoutput
             race <- qualtricsoutput[s,indexcol[x]+87]
             # needs to be a value
@@ -616,14 +616,14 @@ race_perrelationship <- function(qualtricsoutput, relationshipdf) {
           }
         }
       }
-      ############################################## TEACHER 4
-      if (relationshipdf$Nodes[i] == "Teacher 4") {
+      ############################################## TEACHER 3
+      if (relationshipdf$Nodes[i] == "Teacher 3") {
         print("s")
         print(s)
         # 's' will specify what row to look for in the qualtricsoupt, we need the column index
         indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
         for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "Teacher 4") {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "Teacher 3") {
             # get the value in qualdricsoutput
             race <- qualtricsoutput[s,indexcol[x]+87]
             # needs to be a value
@@ -846,14 +846,14 @@ race_perrelationship <- function(qualtricsoutput, relationshipdf) {
           }
         }
       }
-      ############################################## EXTRACIR CLASS 4 TEACHER
-      if (relationshipdf$Nodes[i] == "Extracurricular Class 4 Teacher") {
+      ############################################## EXTRACIR CLASS 3 TEACHER
+      if (relationshipdf$Nodes[i] == "Extracurricular Class 3 Teacher") {
         print("s")
         print(s)
         # 's' will specify what row to look for in the qualtricsoupt, we need the column index
         indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
         for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 4 Teacher") {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "Extracurricular Class 3 Teacher") {
             # get the value in qualdricsoutput
             race <- qualtricsoutput[s,indexcol[x]+87]
             # needs to be a value
@@ -1375,14 +1375,14 @@ race_perrelationship <- function(qualtricsoutput, relationshipdf) {
           }
         }
       }
-      ############################################## EXTENDED FAM 4 
-      if (relationshipdf$Nodes[i] == "ExtendedFam 4") {
+      ############################################## EXTENDED FAM 3 
+      if (relationshipdf$Nodes[i] == "ExtendedFam 3") {
         print("s")
         print(s)
         # 's' will specify what row to look for in the qualtricsoupt, we need the column index
         indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
         for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam4") {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "ExtendedFam3") {
             # get the value in qualdricsoutput
             race <- qualtricsoutput[s,indexcol[x]+87]
             # needs to be a value
@@ -1720,14 +1720,14 @@ race_perrelationship <- function(qualtricsoutput, relationshipdf) {
           }
         }
       }
-      ############################################## GRANDPARENT 4
-      if (relationshipdf$Nodes[i] == "Grandparent 4") {
+      ############################################## GRANDPARENT 3
+      if (relationshipdf$Nodes[i] == "Grandparent 3") {
         print("s")
         print(s)
         # 's' will specify what row to look for in the qualtricsoupt, we need the column index
         indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
         for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "Grandparent 4") {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "Grandparent 3") {
             # get the value in qualdricsoutput
             race <- qualtricsoutput[s,indexcol[x]+87]
             # needs to be a value
@@ -1881,14 +1881,14 @@ race_perrelationship <- function(qualtricsoutput, relationshipdf) {
           }
         }
       }
-      ############################################## OTHER 4 
-      if (relationshipdf$Nodes[i] == "Other4") {
+      ############################################## OTHER 3 
+      if (relationshipdf$Nodes[i] == "Other3") {
         print("s")
         print(s)
         # 's' will specify what row to look for in the qualtricsoupt, we need the column index
         indexcol <- grep("Please.answer.the.following.questions.for.this.person.people...Selected.Choice", colnames(qualtricsoutput))
         for (x in 1:length(indexcol)) {
-          if (as.character(qualtricsoutput[s,indexcol[x]]) == "Other 4") {
+          if (as.character(qualtricsoutput[s,indexcol[x]]) == "Other 3") {
             # get the value in qualdricsoutput
             race <- qualtricsoutput[s,indexcol[x]+87]
             # needs to be a value
