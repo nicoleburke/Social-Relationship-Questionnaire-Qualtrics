@@ -84,3 +84,52 @@ write.csv(problemnodes, file = "/Volumes/woodwardlab/Data_Lab Members/Nicole Bur
 # where you're at - you have at least identified the problem lines. 
 #     There are 56 relationships that have mismatches 
 
+
+###################### 9.4.19 ###################### 
+# fantastic news - for several of those lines, the nodes didn't exisit 
+#   you accidentily delted "3"; ExtendedFam3, Other 3, etc. 
+
+# trying this again....but we are cautiously optimistic!
+
+### import qualtrics output 
+qualdricsoutput_df <- read.csv("Social+Relationship+Survey+Version+4_newexport.csv")
+
+# clean qualtrics survey
+qualdricsoutput_df$Participant....for.the.researcher.
+qualdricsoutput_df <- clean_qualtrics(qualdricsoutput_df)
+qualdricsoutput_df$SubjectID
+
+# make the relationshipdf and run gender and race function
+test1 <- relationship_perline(qualdricsoutput_df)
+test1 <- gender_perrelationship(qualdricsoutput_df, test1)
+test1 <- race_perrelationship(qualdricsoutput_df, test1)
+
+
+### import the manuel check and compare to script output
+manuelentry <- read.csv("Manual Social Network Entry_tocheckRound2.csv")
+str(manuelentry)
+
+# make sure both dfs have the same column names 
+colnames(manuelentry)
+colnames(test1)
+
+# make sure both dfs have the same subjectIDs
+unique(manuelentry$SubjectID)
+unique(test1$SubjectID)
+# exclude subject 22 from test1
+test1 <- subset(test1, SubjectID < 22)
+test1 <- subset(test1, SubjectID != 17)
+
+### test to see if they are giving the same values 
+compare_df <- test1 == manuelentry
+
+# it only gave 3 errors - for the most part, it appears to be working
+
+
+
+
+
+
+
+
+
