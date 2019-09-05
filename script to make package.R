@@ -92,7 +92,7 @@ write.csv(problemnodes, file = "/Volumes/woodwardlab/Data_Lab Members/Nicole Bur
 # trying this again....but we are cautiously optimistic!
 
 ### import qualtrics output 
-qualdricsoutput_df <- read.csv("Social+Relationship+Survey+Version+4_newexport.csv")
+qualdricsoutput_df <- read.csv("Social+Relationship+Survey+Version+4_September+5,+2019_12.25.csv")
 
 # clean qualtrics survey
 qualdricsoutput_df$Participant....for.the.researcher.
@@ -116,15 +116,17 @@ colnames(test1)
 # make sure both dfs have the same subjectIDs
 unique(manuelentry$SubjectID)
 unique(test1$SubjectID)
-# exclude subject 22 from test1
-test1 <- subset(test1, SubjectID < 22)
-test1 <- subset(test1, SubjectID != 17)
+# exclude subject 9 from manuel entry
+manuelentry <- subset(manuelentry, SubjectID != 9)
 
 ### test to see if they are giving the same values 
 compare_df <- test1 == manuelentry
+# write out file to see what is wrong
+write.csv(compare_df, file = "/Volumes/woodwardlab/Data_Lab Members/Nicole Burke/Social Network/Social Bias/Data/for making the network survey/Social-Relationship-Questionnaire-Qualtrics/compare_round3.csv")
 
-# it only gave 3 errors - for the most part, it appears to be working
-
+# write out the manuelentry and test to check "Race" info
+write.csv(test1, file = "/Volumes/woodwardlab/Data_Lab Members/Nicole Burke/Social Network/Social Bias/Data/for making the network survey/Social-Relationship-Questionnaire-Qualtrics/scriptoutput_round3.csv")
+write.csv(manuelentry, file = "/Volumes/woodwardlab/Data_Lab Members/Nicole Burke/Social Network/Social Bias/Data/for making the network survey/Social-Relationship-Questionnaire-Qualtrics/manuelentry_round3.csv")
 
 
 
